@@ -25,6 +25,7 @@ const StudentProfile = async () => {
         <h1>{user?.email}</h1>
         <h1>Phone: </h1>
         <h1>{user?.phone}</h1>
+        <p> Add for commit</p>
       </div>
     </div>
   );

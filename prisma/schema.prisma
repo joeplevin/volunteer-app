@@ -44,6 +44,7 @@ model User {
   lastName      String
   password      String
   email         String   @unique
+  role          String
   emailVerified DateTime?
   phone         String
   image         String?

@@ -2,6 +2,25 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+- Clone the repo into VSCODE
+- run 'npm i' to install all dependencies
+- you should be able to 'npm run dev'
+
+Database
+
+- you may need to set your execution policy to enable this with 'Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass'
+
+- 'npx prisma studio' loads a gui in your browser where you can view, edit & delete records
+
+- in order to edit the schema of prisma, edit/add tables as per the template in prisma/schema.prisma. Then, run 'prisma migrate dev --name 'your_name_without_quotes''. Then run 'prisma generate'. Note that there may be conflicts if you add columns to tables with data already in them. We may need to reconcile data at the end, so worth talking to each other before we do this.
+
+- Database actions are performed in the lib/actions folder using the prisma client. Some examples already in place are in the authActions folder.
+
+Front End
+
+- Try to use next-ui packages where possible, components like Button etc. are more flexible in this package, and easier to use than out-of-the-box React ones.
+- Use 'import Link from 'next/link' for routing. Examples of these are found in the app/auth/signin folder
+
 First, run the development server:
 
 ```bash
