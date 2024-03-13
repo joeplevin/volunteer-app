@@ -647,6 +647,9 @@ video {
 .m-2 {
   margin: 0.5rem;
 }
+.m-5 {
+  margin: 1.25rem;
+}
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -5836,6 +5839,10 @@ video {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 }
 @media (min-width: 1024px) {

@@ -16,6 +16,16 @@ function CharityProfile() {
             </textarea>
             </label>
 
+            {/* <h2>File Opener</h2>
+            <input
+                id="charityImage"
+                type="image"
+                accept=".jpg,.jpeg,.png"
+                onChange={handleImageInput}
+            />
+
+            <button onClick={handleClick}>Upload Image</button> */}
+
             <br /><br />
             <div>
             <button>Save</button>

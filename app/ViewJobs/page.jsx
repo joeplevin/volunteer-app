@@ -1,7 +1,9 @@
 "use client"
 
 import React, {useState, useEffect} from 'react';
-import testData from "/libs/MOCK_DATA.json";
+import testData from "/lib/MOCK_DATA.json";
+import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@nextui-org/react";
+import {Button, ButtonGroup} from "@nextui-org/react";
 
 const ViewJobs = () => {
 
@@ -14,45 +16,42 @@ const ViewJobs = () => {
             .then (jsonData => SVGMetadataElement(jsonData));
     })
 
-    function handleClick () {
-
-        navigate("/Editjobs/page.jsx")
-    }
   return (
     <>
     <h1><center>Current Jobs</center></h1>
    <form>
        <label>
-           Current Jobs <br />
-           <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Genders</th>
-                        <th>Current Job</th>
-                        <th>Duration</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
+           <Table aria-label='Table View of Jobs'>
+                <TableHeader>
+
+                        <TableColumn>ID</TableColumn>
+                        <TableColumn>Genders</TableColumn>
+                        <TableColumn>Current Job</TableColumn>
+                        <TableColumn>Duration</TableColumn>
+                        <TableColumn>Action</TableColumn>
+    
+                </TableHeader>
+                <TableBody>
                     {
                         Data.map((Data, item) =>(
-                            <tr key={item}>
-                                <td>{Data.id}</td>
-                                <td>{Data.genders}</td>
-                                <td>{Data.current_job}</td>
-                                <td>{Data.duration}</td>
-                                <td>
-                                    <button>Edit</button>
-                                </td>
+                            <TableRow key={item}>
+                                <TableCell>{Data.id}</TableCell>
+                                <TableCell>{Data.genders}</TableCell>
+                                <TableCell>{Data.current_job}</TableCell>
+                                <TableCell>{Data.duration}</TableCell>
+                                <TableCell>
+                                    <Button color="primary">
+                                        Edit
+                                    </Button>
+                                </TableCell>
 
-                            </tr>
+                            </TableRow>
                         ))
 
                     }
                     
-                </tbody>
-           </table>
+                </TableBody>
+            </Table>
                 
                          
 
