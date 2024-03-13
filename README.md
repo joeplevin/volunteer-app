@@ -2,9 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-- Clone the repo into VSCODE
+- Clone the repo into VSCODE (Open new VsCode window, click clone repository, add the https link from github & it will start to download)
 - run 'npm i' to install all dependencies
 - you should be able to 'npm run dev'
+
+At this point, you can copy the folders across from the other project that you have been working from. If you installed any other dependencies on that project using npm i XXX, then you will need to rerun these commands in the new project to get it working - keep a list of these installs if you do as we may need to rerun the installs once we merge the branches.
+
+## IMPORTANT
+
+Once you have copied your work across, click on the source control panel, then the menu button in the left hand side next to volunteer-app, under SOURCE CONTROL REPOSITORIES (...) and then branch>create branch. Call the branch your name for brevity, then enter your initial commit message, commit, sync & then the branch at the bottom of VSCode should change from main to 'your name'. Then you can commit any changes as usual.
 
 Database
 
