@@ -1,4 +1,4 @@
-// File: C:\Users\Miranda\volunteer-app\volunteer-app\app\api\auth\[...nextauth]\route.js
+// File: C:\Users\User\Desktop\volunteer\volunteer-app\app\api\auth\[...nextauth]\route.js
 import * as entry from '../../../../../../app/api/auth/[...nextauth]/route.js'
 import type { NextRequest } from 'next/server.js'
 
