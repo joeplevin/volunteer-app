@@ -1,5 +1,56 @@
 {
-  "node": {},
+  "node": {
+    "113c0928ba76288859016b397496db4ea646e71c": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=true!",
+        "app/auth/activation/[jwt]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser",
+        "app/auth/activation/[jwt]/page": "rsc"
+      }
+    },
+    "90d6d229ec81ea14a210f2f58f8de57f6f890fc6": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=true!",
+        "app/auth/activation/[jwt]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser",
+        "app/auth/activation/[jwt]/page": "rsc"
+      }
+    },
+    "abda44bf155b81a22f17de00bb40ef19f1a76bb7": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=true!",
+        "app/auth/activation/[jwt]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser",
+        "app/auth/activation/[jwt]/page": "rsc"
+      }
+    },
+    "d7f5fbaaa80631da54a2feb5e66b20d318e95e70": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=true!",
+        "app/auth/activation/[jwt]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser",
+        "app/auth/activation/[jwt]/page": "rsc"
+      }
+    },
+    "dd5f2df145b92ed7675a250f5dc703482176d2e8": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=true!",
+        "app/auth/activation/[jwt]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fwisalalaz%2Fmonash%2Fmonash%20new%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22forgotPassword%22%2C%22activateUser%22%2C%22%24%24ACTION_0%22%2C%22resetPassword%22%2C%22registerUser%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser",
+        "app/auth/activation/[jwt]/page": "rsc"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "bL5pnkshFbM44NEiTL4XAU0oNcDQXQmLkzdh0PAfPSk="
+  "encryptionKey": "3xHbz/AZtillmDiCt/KQUZfsJ+acqYY+a0+Hwd7pKPc="
 }

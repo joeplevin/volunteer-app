@@ -635,6 +635,9 @@ video {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
+.col-span-full {
+  grid-column: 1 / -1;
+}
 .-m-2 {
   margin: -0.5rem;
 }
@@ -691,6 +694,10 @@ video {
   margin-top: calc((1.75rem - 1.25rem) / 2);
   margin-bottom: calc((1.75rem - 1.25rem) / 2);
 }
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
 .-mr-2 {
   margin-right: -0.5rem;
 }
@@ -732,6 +739,12 @@ video {
 }
 .mt-2 {
   margin-top: 0.5rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .box-border {
   box-sizing: border-box;
@@ -1616,6 +1629,9 @@ video {
   --tw-border-opacity: 1;
   border-color: hsl(var(--nextui-warning) / var(--nextui-warning-opacity, var(--tw-border-opacity)));
 }
+.border-gray-900\/50 {
+  border-color: rgb(17 24 39 / 0.5);
+}
 .border-x-transparent {
   border-left-color: transparent;
   border-right-color: transparent;
@@ -2095,6 +2111,10 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -2103,6 +2123,18 @@ video {
 }
 .font-semibold {
   font-weight: 600;
+}
+.leading-5 {
+  line-height: 1.25rem;
+}
+.leading-6 {
+  line-height: 1.5rem;
+}
+.leading-8 {
+  line-height: 2rem;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 .\!text-danger {
   --tw-text-opacity: 1 !important;
@@ -2239,6 +2271,14 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
@@ -5790,6 +5830,11 @@ video {
     align-items: center;
   }
 
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .sm\:\[--scale-enter\:100\%\] {
     --scale-enter: 100%;
   }
@@ -5984,9 +6029,9 @@ video {
   background-color: hsl(var(--nextui-default-200) / var(--nextui-default-200-opacity, var(--tw-bg-opacity)));
 }
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app\\layout.js","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.js","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
   font-family: '__Inter_aaf875';
