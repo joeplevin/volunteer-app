@@ -1,7 +1,10 @@
+import EditJobsPage from "../components/EditJobsPage";
+
 function EditJob () {
     return (
-
-        <div>Edit Job</div>
+        <>
+        <EditJobsPage></EditJobsPage>
+        </>
     )
 
 }

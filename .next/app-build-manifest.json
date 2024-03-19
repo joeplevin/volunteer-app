@@ -1,40 +1,35 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/CharityProfile/page": [
+    "/ViewJob/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/CharityProfile/page.js"
+      "static/chunks/app/ViewJob/page.js"
     ],
     "/ViewJobs/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/ViewJobs/page.js"
     ],
-    "/ViewJob/page": [
+    "/EditJob/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/ViewJob/page.js"
+      "static/chunks/app/EditJob/page.js"
     ],
-    "/auth/signin/page": [
+    "/CreateCharity/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/auth/signin/page.js"
+      "static/chunks/app/CreateCharity/page.js"
     ],
-    "/EditCharityPage/page": [
+    "/auth/signup/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/EditCharityPage/page.js"
+      "static/chunks/app/auth/signup/page.js"
     ],
     "/not-found": [
       "static/chunks/webpack.js",

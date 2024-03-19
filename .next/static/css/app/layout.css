@@ -718,6 +718,9 @@ video {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .mb-px {
   margin-bottom: 1px;
 }
