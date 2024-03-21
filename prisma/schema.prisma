@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -10,20 +7,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model Account {
-  id                 String  @id @default(cuid())
-  userId             String
-  type               String
-  provider           String
-  providerAccountId  String
-  refresh_token      String?  
-  access_token       String?  
-  expires_at         Int?
-  token_type         String?
-  scope              String?
-  id_token           String?  
-  session_state      String?
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -43,13 +39,16 @@ model User {
   firstName     String
   lastName      String
   password      String
-  email         String   @unique
+  email         String    @unique
   role          String
   emailVerified DateTime?
   phone         String
   image         String?
   accounts      Account[]
   sessions      Session[]
+  charity       Charity?  @relation(fields: [charityId], references: [id])
+  charityId     String?
+  Student       Student?
 }
 
 model VerificationToken {
@@ -58,4 +57,62 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+model Charity {
+  id                 String        @id @default(cuid())
+  users              User[]
+  Jobs               Job[]
+  Certificates       Certificate[]
+  charityName        String
+  charityDescription String
+  charityLocation    String
+  charityWebsite     String
+}
+
+model Certificate {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  charityId   String // Change to Charity's primary key type
+  charity     Charity  @relation(fields: [charityId], references: [id])
+  studentId   String
+  student     Student? @relation(fields: [studentId], references: [id])
+}
+
+model Job {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  location    String
+  completed   Boolean
+  progress    String
+  charityId   String // Change to Charity's primary key type
+  charity     Charity  @relation(fields: [charityId], references: [id])
+  studentId   String?
+  student     Student? @relation(fields: [studentId], references: [id])
+}
+
+model Student {
+  id           String        @id @default(cuid())
+  userId       String        @unique
+  user         User          @relation(fields: [userId], references: [id])
+  Cv           Cv?
+  Jobs         Job[]
+  Certificates Certificate[]
+}
+
+model Cv {
+  id        String     @id @default(cuid())
+  cvUrl     String
+  studentId String     @unique
+  student   Student    @relation(fields: [studentId], references: [id])
+  CvSkills  CvSkills[]
+}
+
+model CvSkills {
+  id    String @id @default(cuid())
+  skill String
+  cvId  String
+  cv    Cv     @relation(fields: [cvId], references: [id])
 }

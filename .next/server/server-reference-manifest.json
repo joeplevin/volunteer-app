@@ -1,5 +1,46 @@
 {
-  "node": {},
+  "node": {
+    "147da6937c9adda27be22bcb25c292bf126356ca": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmatildadeakin%2FDocuments%2FYear%203%2FTeam%20project%20%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22%24%24ACTION_0%22%2C%22forgotPassword%22%2C%22resetPassword%22%2C%22registerUser%22%2C%22activateUser%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser"
+      }
+    },
+    "6d0b4b22dde18fe41c8c5890bb5af9eaf10282ea": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmatildadeakin%2FDocuments%2FYear%203%2FTeam%20project%20%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22%24%24ACTION_0%22%2C%22forgotPassword%22%2C%22resetPassword%22%2C%22registerUser%22%2C%22activateUser%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser"
+      }
+    },
+    "7f073914bbc3f72b5379499f5bbf51b48524b405": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmatildadeakin%2FDocuments%2FYear%203%2FTeam%20project%20%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22%24%24ACTION_0%22%2C%22forgotPassword%22%2C%22resetPassword%22%2C%22registerUser%22%2C%22activateUser%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser"
+      }
+    },
+    "909320101c1eb11717d7294911d7fc05be3123e8": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmatildadeakin%2FDocuments%2FYear%203%2FTeam%20project%20%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22%24%24ACTION_0%22%2C%22forgotPassword%22%2C%22resetPassword%22%2C%22registerUser%22%2C%22activateUser%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser"
+      }
+    },
+    "afe71ef924b2fb2270961144fed83f7871497be9": {
+      "workers": {
+        "app/auth/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmatildadeakin%2FDocuments%2FYear%203%2FTeam%20project%20%2Fvolunteer-app%2Flib%2Factions%2FauthActions.js%22%2C%5B%22%24%24ACTION_0%22%2C%22forgotPassword%22%2C%22resetPassword%22%2C%22registerUser%22%2C%22activateUser%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/auth/signup/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "bL5pnkshFbM44NEiTL4XAU0oNcDQXQmLkzdh0PAfPSk="
+  "encryptionKey": "WChUwZd92ss7eQVXw224I7Ju2lK3WPQ2sMxTKpRf2pw="
 }
