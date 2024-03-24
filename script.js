@@ -1,48 +1,21 @@
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient({log: ["query"]})
 
-
-//create function
-async function createCharity(charityData) {
-    try {
-        console.log('Charity data:', charityData);
-      const newCharity = await prisma.charity.create({
-        data: charityData,
-      });
-      console.log('New charity created:', newCharity);
-      return newCharity;
-    } catch (error) {
-      console.error('Error creating charity:', error);
-      throw error;
-    }
-  }
-  
-
-//update function
-async function updateCharity(charityId, updatedData) {
-    try {
-      const updatedCharity = await prisma.charity.update({
-        where: { id: charityId },
-        data: updatedData,
-      });
-      console.log('Charity updated:', updatedCharity);
-      return updatedCharity;
-    } catch (error) {
-      console.error('Error updating charity:', error);
-      throw error;
-    }
+async function main () {
+  const charity = await prisma.charity.create({data: {
+    charityName: data.charityName,
+    charityDescription: data.charityDescription,
+    charityLocation: data.charityLocation,
+    charityWebsite: data.charityWebsite
+  }})
+  console.log(charity)
 }
-  
 
-//delete function
-async function deleteCharity(charityId) {
-    try {
-      await prisma.charity.delete({
-        where: { id: charityId },
-      });
-      console.log('Charity deleted');
-    } catch (error) {
-      console.error('Error deleting charity:', error);
-      throw error;
-    }
-  }
+main ()
+.catch (e => {
+  console.error(e.message)
+})
+.finally(async () => {
+  await prisma.$disconnect()
+})
+export default main

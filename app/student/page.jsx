@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
 import React from "react";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "../pages/api/auth/[...nextauth]/route";
 import Image from "next/image";
 
 const StudentProfile = async () => {

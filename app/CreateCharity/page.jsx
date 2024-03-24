@@ -4,6 +4,7 @@ import CreateCharity from '../components/CreateCharityForm';
 const CreateCharityPage = () => {
   return (
         <CreateCharity></CreateCharity>
+        
   )
 }
 

@@ -1,35 +1,51 @@
-"use client"
-import React, { useState } from 'react';
+"use client";
+import React, { useState, useEffect } from 'react';
 
 const Home = () => {
-  // Dummy data for current charities (replace with actual data)
-  const [currentCharities, setCurrentCharities] = useState([
-    { id: 1, name: "Charity 1" },
-    { id: 2, name: "Charity 2" },
-    { id: 3, name: "Charity 3" }
-  ]);
+  const [currentCharities, setCurrentCharities] = useState([]);
+
+  useEffect(() => {
+    // Fetch charities from your backend API
+    const fetchCharities = async () => {
+      try {
+        const response = await fetch('../api/getCharities');
+        if (response.ok) {
+          const data = await response.json();
+          setCurrentCharities(data); // Update state with fetched charities
+        } else {
+          console.error('Failed to fetch charities');
+        }
+      } catch (error) {
+        console.error('Error fetching charities:', error);
+      }
+    };
+
+    fetchCharities(); // Call the fetchCharities function when component mounts
+  }, []); // Empty dependency array ensures useEffect only runs once after initial render
 
   // Function to handle navigation to create charity page
   const navigateToCreateCharity = () => {
-    // Redirect to the create charity page
     window.location.href = '/CreateCharity';
   };
 
   // Function to handle navigation to edit charity profile page
-  const navigateToEditCharityProfile = (charityId) => {
-    // Redirect to the edit charity profile page for the specified charity
-    window.location.href = `/EditCharityProfile?id=${charityId}`;
+  const navigateToEditCharityProfile = (charityId, charityData) => {
+    if (!charityData) {
+      console.error('Charity data not available');
+      return;
+    }
+    window.location.href = `/EditCharityProfile?id=${charityId}&charityName=${encodeURIComponent(charityData.charityName)}&charityDescription=${encodeURIComponent(charityData.charityDescription)}&charityLocation=${encodeURIComponent(charityData.charityLocation)}&charityWebsite=${encodeURIComponent(charityData.charityWebsite)}`;
   };
+  
 
   // Function to handle deletion of a charity
   const deleteCharity = async (charityId) => {
     try {
-      const response = await fetch(`/api/deleteCharity?id=${charityId}`, {
+      const response = await fetch(`../api/deleteCharityRoute?id=${charityId}`, {
         method: 'DELETE',
       });
 
       if (response.ok) {
-        // Remove the deleted charity from the list
         setCurrentCharities(prevCharities =>
           prevCharities.filter(charity => charity.id !== charityId)
         );
@@ -46,14 +62,12 @@ const Home = () => {
     <div className="container mx-auto py-8">
       <h1 className="text-3xl font-semibold mb-4">Current Charities</h1>
       
-      {/* List of current charities */}
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {currentCharities.map(charity => (
-          <li key={charity.id} className="bg-gray-100 p-4 rounded-md">
-            <p>{charity.name}</p>
-            {/* Edit and delete buttons */}
-            <div className="mt-2 flex justify-between">
-              <button onClick={() => navigateToEditCharityProfile(charity.id)} className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md mr-2">
+          <li key={charity.id} className="bg-white rounded-md shadow-md p-6">
+            <p className="text-lg font-semibold">{charity.charityName}</p>
+            <div className="mt-4 flex justify-between">
+              <button onClick={() => navigateToEditCharityProfile(charity.id, charity)} className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md mr-2">
                 Edit
               </button>
               <button onClick={() => deleteCharity(charity.id)} className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md">
@@ -64,7 +78,6 @@ const Home = () => {
         ))}
       </ul>
 
-      {/* Add new charity button */}
       <div className="mt-8">
         <button onClick={navigateToCreateCharity} className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md">
           Add New Charity

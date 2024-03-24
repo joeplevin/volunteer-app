@@ -1,4 +1,8 @@
 {
-  "/CreateCharity/page": "app/CreateCharity/page.js",
-  "/CharityHomePage/page": "app/CharityHomePage/page.js"
+  "/not-found": "app/not-found.js",
+  "/AdminHomePage/page": "app/AdminHomePage/page.js",
+  "/EditAdminProfile/page": "app/EditAdminProfile/page.js",
+  "/CharityHomePage/page": "app/CharityHomePage/page.js",
+  "/EditCharityProfile/page": "app/EditCharityProfile/page.js",
+  "/CreateCharity/page": "app/CreateCharity/page.js"
 }
